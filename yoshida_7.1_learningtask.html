@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphics Showcase</title>
+</head>
+<body>
+
+<!-- First Row -->
+<div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+
+  <!-- Graphic 1 - Abstract -->
+<div>
+  <canvas id="canvas9" width="200" height="200" style="border:1px solid #000;"></canvas>
+  <script>
+    const canvas9 = document.getElementById('canvas9');
+    const ctx9 = canvas9.getContext('2d');
+
+    ctx9.fillStyle = '#fff';
+    ctx9.fillRect(0, 0, 200, 200);
+
+   
+    ctx9.beginPath();
+    ctx9.arc(50, 50, 30, 0, 2 * Math.PI);
+    ctx9.fillStyle = '#ff4500';
+    ctx9.fill();
+
+    ctx9.beginPath();
+    ctx9.arc(150, 50, 30, 0, 2 * Math.PI);
+    ctx9.fillStyle = '#87CEEB';
+    ctx9.fill();
+
+    ctx9.beginPath();
+    ctx9.arc(50, 150, 30, 0, 2 * Math.PI);
+    ctx9.fillStyle = '#ffd700';
+    ctx9.fill();
+
+    ctx9.beginPath();
+    ctx9.arc(150, 150, 30, 0, 2 * Math.PI);
+    ctx9.fillStyle = '#228B22';
+    ctx9.fill();
+
+    
+    ctx9.beginPath();
+    ctx9.moveTo(50, 50);
+    ctx9.lineTo(150, 150);
+    ctx9.strokeStyle = '#ff4500';
+    ctx9.lineWidth = 4;
+    ctx9.stroke();
+
+    ctx9.beginPath();
+    ctx9.moveTo(150, 50);
+    ctx9.lineTo(50, 150);
+    ctx9.strokeStyle = '#87CEEB';
+    ctx9.stroke();
+  </script>
+</div>
+
+  <!-- Graphic 2 - Sun Art -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas2 = document.querySelectorAll('div canvas')[1];
+      const ctx2 = canvas2.getContext('2d');
+      
+      ctx2.fillStyle = '#fff';
+      ctx2.fillRect(0, 0, 200, 200);
+      ctx2.beginPath();
+      ctx2.arc(100, 100, 80, 0, 2 * Math.PI);
+      ctx2.fillStyle = '#ffd700';
+      ctx2.fill();
+      ctx2.strokeStyle = '#ffd700';
+      ctx2.lineWidth = 5;
+      ctx2.moveTo(100, 20);
+      ctx2.lineTo(100, 0);
+      ctx2.moveTo(100, 180);
+      ctx2.lineTo(100, 200);
+      ctx2.moveTo(20, 100);
+      ctx2.lineTo(0, 100);
+      ctx2.moveTo(180, 100);
+      ctx2.lineTo(200, 100);
+      ctx2.moveTo(50, 50);
+      ctx2.lineTo(30, 30);
+      ctx2.moveTo(150, 50);
+      ctx2.lineTo(170, 30);
+      ctx2.moveTo(50, 150);
+      ctx2.lineTo(30, 170);
+      ctx2.moveTo(150, 150);
+      ctx2.lineTo(170, 170);
+      ctx2.stroke();
+    </script>
+  </div>
+
+  <!-- Graphic 3 - Crescent Moon -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas3 = document.querySelectorAll('div canvas')[2];
+      const ctx3 = canvas3.getContext('2d');
+      
+      ctx3.fillStyle = '#fff';
+      ctx3.fillRect(0, 0, 200, 200);
+      ctx3.beginPath();
+      ctx3.arc(100, 100, 80, 0, 2 * Math.PI);
+      ctx3.fillStyle = '#f0f0f0';
+      ctx3.fill();
+      ctx3.beginPath();
+      ctx3.arc(60, 100, 50, 0, 2 * Math.PI);
+      ctx3.fillStyle = '#fff';
+      ctx3.fill();
+    </script>
+  </div>
+
+  <!-- Graphic 4 - Star -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas4 = document.querySelectorAll('div canvas')[3];
+      const ctx4 = canvas4.getContext('2d');
+      
+      ctx4.fillStyle = '#fff';
+      ctx4.fillRect(0, 0, 200, 200);
+      ctx4.beginPath();
+      ctx4.moveTo(100, 20);
+      ctx4.lineTo(130, 80);
+      ctx4.lineTo(190, 80);
+      ctx4.lineTo(140, 120);
+      ctx4.lineTo(160, 180);
+      ctx4.lineTo(100, 140);
+      ctx4.lineTo(40, 180);
+      ctx4.lineTo(60, 120);
+      ctx4.lineTo(10, 80);
+      ctx4.lineTo(80, 80);
+      ctx4.fillStyle = '#ffd700';
+      ctx4.strokeStyle = '#ff4500';
+      ctx4.lineWidth = 4;
+      ctx4.closePath();
+      ctx4.fill();
+      ctx4.stroke();
+    </script>
+  </div>
+
+</div>
+
+<!-- Second Row -->
+<div style="display: flex; justify-content: space-around;">
+
+  <!-- Graphic 5 - Rounded Mountains with Clouds and Grass -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas5 = document.querySelectorAll('div canvas')[4];
+      const ctx5 = canvas5.getContext('2d');
+      
+      ctx5.fillStyle = '#fff';
+      ctx5.fillRect(0, 0, 200, 200);
+      ctx5.fillStyle = '#87CEEB';
+      ctx5.fillRect(0, 0, 200, 200);
+      ctx5.beginPath();
+      ctx5.moveTo(20, 180);
+      ctx5.quadraticCurveTo(100, 50, 180, 180);
+      ctx5.fillStyle = '#8B4513';
+      ctx5.fill();
+      ctx5.beginPath();
+      ctx5.arc(40, 40, 25, 0, 2 * Math.PI);
+      ctx5.fillStyle = '#ffd700';
+      ctx5.fill();
+      ctx5.beginPath();
+      ctx5.ellipse(150, 40, 20, 15, 0, 0, 2 * Math.PI);
+      ctx5.ellipse(170, 30, 25, 20, 0, 0, 2 * Math.PI);
+      ctx5.ellipse(190, 40, 20, 15, 0, 0, 2 * Math.PI);
+      ctx5.fillStyle = '#fff';
+      ctx5.fill();
+      ctx5.fillStyle = '#228B22';
+      ctx5.fillRect(0, 180, 200, 20);
+    </script>
+  </div>
+
+  <!-- Graphic 6 - Japanese Flag -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas6 = document.querySelectorAll('div canvas')[5];
+      const ctx6 = canvas6.getContext('2d');
+      
+      ctx6.fillStyle = '#fff';
+      ctx6.fillRect(0, 0, 200, 200);
+      ctx6.beginPath();
+      ctx6.arc(100, 100, 50, 0, 2 * Math.PI);
+      ctx6.fillStyle = '#FF0000';
+      ctx6.fill();
+    </script>
+  </div>
+
+  <!-- Graphic 7 - German Flag -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas7 = document.querySelectorAll('div canvas')[6];
+      const ctx7 = canvas7.getContext('2d');
+      
+      ctx7.fillStyle = '#fff';
+      ctx7.fillRect(0, 0, 200, 200);
+      ctx7.fillStyle = '#000';
+      ctx7.fillRect(0, 0, 200, 66);
+      ctx7.fillStyle = '#FF0000';
+      ctx7.fillRect(0, 66, 200, 66);
+      ctx7.fillStyle = '#FFD100';
+      ctx7.fillRect(0, 132, 200, 68);
+    </script>
+  </div>
+
+  <!-- Graphic 8 - Tree -->
+  <div>
+    <canvas width="200" height="200" style="border:1px solid #000;"></canvas>
+    <script>
+      const canvas8 = document.querySelectorAll('div canvas')[7];
+      const ctx8 = canvas8.getContext('2d');
+      
+      ctx8.fillStyle = '#fff';
+      ctx8.fillRect(0, 0, 200, 200);
+      ctx8.fillStyle = '#87CEEB';
+      ctx8.fillRect(0, 0, 200, 200);
+      ctx8.fillStyle = '#8B4513';
+      ctx8.fillRect(90, 100, 20, 60);
+      ctx8.beginPath();
+      ctx8.arc(100, 80, 40, 0, 2 * Math.PI);
+      ctx8.fillStyle = '#228B22';
+      ctx8.fill();
+      ctx8.fillRect(0, 160, 200, 40);
+    </script>
+  </div>
+
+</div>
+
+</body>
+</html>
